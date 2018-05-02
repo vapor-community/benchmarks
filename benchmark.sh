@@ -41,6 +41,7 @@ benchmark_do() {
 
 benchmark_do "Express (Node.js)" "node app.js" express
 benchmark_do "Gin (Go)" "go run ping.go" gin
+benchmark_do "Ruby on Rails" "RAILS_ENV=production rails server -p 8000" ruby-on-rails
 benchmark_do "Vapor 3 (Swift)" "swift run -c release Benchmark serve -e prod" vapor-3
 
 echo ""
