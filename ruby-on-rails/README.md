@@ -1,4 +1,5 @@
-Assumption is that a recent/current version of Ruby on Rails is installed. To install:
+Assumption is that a recent/current version of Ruby on Rails is installed.
+To install:
 
     $ brew install rbenv ruby-build
     $ rbenv install 2.5.0
