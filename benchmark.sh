@@ -28,7 +28,7 @@ benchmark_do() {
     fi
 
     echo "🚀  Benchmarking"
-    wrk -t 4 -c 128 -d 1 http://$IP:9000/ping
+    wrk -t 4 -c 128 -d 5 http://$IP:9000/ping
 
     docker stop $CID
 
@@ -41,5 +41,4 @@ benchmark_do "Flask (Python)" flask
 benchmark_do "Rails (Ruby)" rails
 benchmark_do "Vapor 3 (Swift)" vapor-3
 
-echo ""
 echo "✅  Done"
