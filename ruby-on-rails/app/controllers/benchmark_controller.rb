@@ -1,5 +1,5 @@
 class BenchmarkController < ApplicationController
   def ping
-    puts "123"
+    render plain: '123'
   end
 end
