@@ -41,4 +41,9 @@ benchmark_do "Flask (Python)" flask
 benchmark_do "Rails (Ruby)" rails
 benchmark_do "Vapor 3 (Swift)" vapor-3
 
+<<<<<<< HEAD
 echo "✅  Done"
+=======
+echo ""
+echo "✅  Done"
+>>>>>>> ca0870951d78ded69ba3dfaf40a964fc8eb45c29
