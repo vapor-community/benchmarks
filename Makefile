@@ -22,12 +22,15 @@ rails:
 
 
 # Swift
-swift: vapor-3
+swift: vapor-3 vapor-2 http
 vapor-3:
 	docker build -t benchmark-vapor-3 source/vapor-3
+vapor-2:
+	docker build -t benchmark-vapor-2 source/vapor-2
+http:
+	docker build -t benchmark-http source/http
 
 clean:
 	docker stop $(docker ps -a -q)
 	docker rm $(docker ps -a -q)
 	docker images -a | grep "benchmark-" | awk '{print $3}' | xargs docker rmi
-	rm -rf bin/*

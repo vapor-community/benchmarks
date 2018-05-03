@@ -4,9 +4,9 @@ import PackageDescription
 let package = Package(
     name: "Benchmark",
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", .branch("gm")),
+        .package(url: "https://github.com/vapor/http.git", from: "3.0.0"),
     ],
     targets: [
-        .target(name: "main", dependencies: ["Vapor"], path: "."),
+        .target(name: "main", dependencies: ["HTTP"], path: "."),
     ]
 )
